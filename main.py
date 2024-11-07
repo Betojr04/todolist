@@ -96,14 +96,17 @@ while True:
     if user_choice == 1:
         add_task()
         if continue_use() == False:
+            print("Thank you for using the program. Goobye!")
             break
     elif user_choice == 2:
         delete_task()
         if continue_use() == False:
+            print("Thank you for using the program. Goobye!")
             break
     elif user_choice == 3:
         view_tasks()
         if continue_use() == False:
+            print("Thank you for using the program. Goobye!")
             break
     elif user_choice == 4:
         print("Thank you for using the program. Goobye!")
