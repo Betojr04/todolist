@@ -26,6 +26,7 @@ def delete_task():
     item = input("enter task to remove: ")
     if not item.strip():
         print("Entry cannot be empty.")
+        item = input("enter task to remove: ")
     elif item not in tasks:
         print("Cannot delete a task that does not exist.")
     else:
