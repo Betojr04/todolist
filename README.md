@@ -1,38 +1,104 @@
-**Overview**
 
-In this project, you will build a functional To-Do List Application using Python from scratch. This assignment will help you strengthen your understanding of Python concepts such as syntax, data types, control structures, functions, and error handling, all while creating a practical, interactive command-line application.
+# To-Do List Application
 
-**Project**
+A command-line application to manage a simple to-do list. This app allows users to add tasks, delete tasks, and view all tasks in a list. It also includes error handling to ensure smooth user interaction.
 
-In VS Code, create a .py file and complete the following requirements:
+## Table of Contents
+1. [Features](#features)
+2. [Getting Started](#getting-started)
+3. [Usage](#usage)
+4. [Code Structure](#code-structure)
+5. [Future Improvements](#future-improvements)
+6. [Contributing](#contributing)
+7. [License](#license)
 
-**User Interface (UI) and Storage Method*** Build a simple Command Line Interface (CLI) that welcomes users and displays a menu with options to add, view, delete tasks, or quit the application.
+---
 
-* The tasks should be stored in a Python list
+### Features
+- **Add Tasks**: Users can add a new task to the list.
+- **Delete Tasks**: Users can remove a task from the list.
+- **View Tasks**: Displays the list of tasks in a formatted way.
+- **Error Handling**: Prevents users from entering invalid options, empty tasks, or tasks that don't exist.
 
-**Core Features*** Add tasks
+---
 
-* View tasks
-* Delete tasks
-* Quit the application
+### Getting Started
 
-**User Interaction*** Use input() to capture user selections and ensure proper input validation to handle invalid choices.
+#### Prerequisites
+- Python 3.x
 
-**Error Handling*** Implement error handling using try, except, else, and finally blocks to catch errors
+#### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/YourUsername/YourRepoName.git
 
-* Alert the user if they provide invalid input
-* Alert the user if there are no tasks to view
-* Alert the user if they try to delete a task that doesn't exist
-* Alert the user if they select an option on the main menu that doesn't exist
+2. Navigate to the project directory:
+   ```bash
+   cd YourRepoName
+   ```
+3. Run the program:
+   ```bash
+   python3 your_program.py
+   ```
 
-**Code Organization*** Organize your code into functions to improve clarity and maintainability.
+---
 
-* Use descriptive function names and add comments/docstrings where necessary.
+### Usage
 
-**Testing and Debugging*** Thoroughly test your application, considering edge cases such as empty lists and invalid input.
+1. Run the program using Python.
+2. Follow the on-screen prompts:
+   - Type `1` to add a task.
+   - Type `2` to delete a task.
+   - Type `3` to view all tasks.
+   - Type `4` to quit the program.
 
- **Submission Guidelines:** * Ensure the code is ready to run and that all functionality, such as loops, conditionals, and functions, works as expected when executed. The goal is to have fully tested and functional code.
+#### Example Usage
 
-* **Create a GitHub repository **to host your project. Add, commit, and push your code to it
-* **Create a README.md** on the repository that gives information about your project and how to run/use it
-* **Submit the repository link** in Google Classroom.
+```
+Welcome to To-Do List
+
+Menu
+1. Add Task
+2. Delete Task
+3. View Tasks
+4. Quit Application
+
+Select a Menu Option (e.g 1, 2, 3, 4): 
+```
+
+---
+
+### Code Structure
+
+- `tasks = []`: A list that holds all to-do tasks.
+- **Functions**:
+  - `add_task()`: Prompts the user to add a new task and validates the input.
+  - `delete_task()`: Allows the user to delete a specified task from the list, ensuring the task exists.
+  - `view_tasks()`: Displays all tasks in the list, formatted as a numbered list.
+  - `user_input()`: Handles the menu selection process, ensuring valid input.
+  - `continue_use()`: Asks the user if they want to perform another action or quit.
+
+Each function has its own purpose, making the code modular and organized.
+
+---
+
+### Future Improvements
+
+Considering adding these features to make the program more robust and user-friendly (not anytime soon maybe, IDK though):
+
+- **Save and Load Tasks**: Store tasks in a file so they persist between program runs.
+- **Task Completion**: Allow users to mark tasks as complete.
+- **Prioritization**: Add a priority level to tasks.
+- **UI Enhancements**: Use a graphical interface for a more intuitive experience.
+
+---
+
+### Contributing
+
+Feel free to submit issues or pull requests for new features or bug fixes.
+
+### License
+
+None
+
+---
