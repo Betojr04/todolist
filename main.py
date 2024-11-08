@@ -64,7 +64,7 @@ def user_input():
     user_input = None
     while user_input not in options:
         try:
-            user_input = int(input("Select a Menu Option (e.g 1, 2 , 3, 4): "))
+            user_input = int(input("Select a Menu Option (e.g 1, 2, 3, 4): "))
         except ValueError:
             print(f"Please choose an option from the menu")
     return user_input
